@@ -11,6 +11,12 @@ spring:
   jpa:
     show-sql: true
     generate-ddl: true
+    hibernate:
+#      existing table will be updated--->should be used in PROD/DEV Env
+      ddl-auto: update
+#      new table will be created whenever server is up/running again--->should be only used in TEST Env
+#      ddl-auto: create
+
 
 
 
